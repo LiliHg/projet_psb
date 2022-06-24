@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Nasa;
+    src: url(https://raw.githubusercontent.com/tombrowndev/fewd-memory-game/master/lib/fonts/Nasa.ttf);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	background-color: #000022;
+	background-image: url(https://preview.ibb.co/g7z5jx/site_bg.jpg);
+	background-size: cover;
+}
+
+.button {
+
+}
+
+.site-container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.site-header {
+	font-family: Nasa, cursive;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.game-container {
+	margin-top: 20px;
+}
+
+.game-controls {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 6px;
+	line-height: 40px;
+
+	background: #fff;
+}
+
+.game-controls:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.game-controls .statistics {
+	font-weight: bold;
+}
+
+.game-controls .button {
+	background-color: #000;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	float: right
+}
+
+.game-board {
+	position: relative;
+	border-radius: 6px;
+
+	background: rgba(255,255,255,0.5);
+}
+
+.game-board:before {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.card-container {
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	bottom: 1%;
+	left: 1%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.card {
+	width: 22%;
+	height: 22%;
+	position: relative;
+}
+
+.card .front, .card .back {
+	height: 100%;
+	text-align: center;
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.card .front {
+	background-color: #091457FF;
+	background-image: url(https://image.ibb.co/jQDbrc/card_back.png);
+	cursor: pointer;
+}
+
+.card .back {
+	width: 0;
+	overflow: hidden;
+	background-color: #FFF;
+	background-size: 80%;
+}
+
+.card .back span {
+	font-size: 4em;
+	line-height: 130px;
+	font-weight: bold;
+}
+
+.site-footer {
+	padding: 10px 0;
+	font-size: 0.8em;
+	color: #ddd;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.site-footer a {
+	color: #fff;
+}
